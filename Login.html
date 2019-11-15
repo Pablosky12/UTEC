@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Sign In</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+
+    body {
+      background: #272727;
+      color: #EEEEEE;
+      height: 100%;
+      font-family: 'Open Sans', sans-serif;
+      opacity: 0;
+    }
+
+    .fade-from-above {
+      animation: fade 0.8s ease-in forwards;
+    }
+
+    @keyframes fade {
+      0%{opacity:0;
+      transform:translateY(-10px) }
+  
+      100% {transform:translateY(0);
+      opacity:1}
+      }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .welcomeP {
+      font-size: 17px;
+      margin-bottom: 0px;
+    }
+
+    .inputDiv {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid;
+      border-color: #636363;
+      padding-bottom: 6px;
+      margin-bottom: 32.9px;
+      width: 217px;
+      transition: ease-in 0.2s;
+    }
+
+    .inputDiv:focus-within {
+      border-color: #EEEEEE;
+    }
+
+    .inputIcon > g{
+    transition: ease-in 0.2s;
+    }
+
+    .inputDiv:focus-within .inputIcon > g {
+      opacity: 1;
+    }
+
+    .inputIcon {
+      margin-right: 12.6px;
+      margin-left: 4.5px;
+    }
+
+    input {
+      background: #272727;
+      border: 0px;
+      color: #EEEEEE;
+      outline: none;
+      font-size: 14px;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px #272727 inset !important;
+      color: #EEEEEE;
+    }
+
+    input:-webkit-autofill {
+      -webkit-text-fill-color: #EEEEEE !important;
+    }
+
+    #btn-login {
+      transition: ease-in 0.2s;
+    }
+
+    #btn-login:hover {
+      transform: scale(1.1);
+    }
+
+    #btn-login .loginCircle:hover {
+
+      fill: #FFC350;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div style="margin-bottom: 32px">
+      <p class="welcomeP">Welcome back, friend</p>
+    </div>
+    <div class="inputDiv">
+      <svg class="inputIcon" xmlns="http://www.w3.org/2000/svg" width="15.267" height="17.05"
+        viewBox="0 0 15.267 17.05">
+        <g transform="translate(-5.5 -4)" opacity="0.3">
+          <path d="M20.267,27.85V26.067A3.567,3.567,0,0,0,16.7,22.5H9.567A3.567,3.567,0,0,0,6,26.067V27.85"
+            transform="translate(0 -7.3)" fill="none" stroke="#eee" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="1" />
+          <path d="M19.133,8.067A3.567,3.567,0,1,1,15.567,4.5,3.567,3.567,0,0,1,19.133,8.067Z"
+            transform="translate(-2.433)" fill="none" stroke="#eee" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="1" />
+        </g>
+      </svg>
+      <input id="email" type="email" placeholder="email" />
+    </div>
+    <div class="inputDiv">
+      <svg class="inputIcon" xmlns="http://www.w3.org/2000/svg" width="15.923" height="17.581"
+        viewBox="0 0 15.923 17.581">
+        <g transform="translate(-4 -2.5)" opacity="0.3">
+          <path
+            d="M6.158,16.5H17.765a1.658,1.658,0,0,1,1.658,1.658v5.8a1.658,1.658,0,0,1-1.658,1.658H6.158A1.658,1.658,0,0,1,4.5,23.962v-5.8A1.658,1.658,0,0,1,6.158,16.5Z"
+            transform="translate(0 -6.038)" fill="none" stroke="#eee" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="1" />
+          <path d="M10.5,10.462V7.145a4.145,4.145,0,0,1,8.291,0v3.316" transform="translate(-2.684)" fill="none"
+            stroke="#eee" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+        </g>
+      </svg>
+      <input id="password" type="password" placeholder="password" />
+    </div>
+    <div>
+      <svg id="btn-login" style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58" viewBox="0 0 58 58">
+        <defs>
+          <clipPath id="clip-path">
+            <rect width="58" height="58" fill="none" />
+          </clipPath>
+        </defs>
+        <g id="Repeat_Grid_2" data-name="Repeat Grid 2" clip-path="url(#clip-path)">
+          <g id="Group_80" data-name="Group 80" transform="translate(-159 -663)">
+            <g id="Icon_awesome-chevron-right" data-name="Icon awesome-chevron-right"
+              transform="translate(182.57 681.235)">
+              <path id="Icon_awesome-chevron-right-2" data-name="Icon awesome-chevron-right"
+                d="M15.069,14.629l-9.9,9.9a1.222,1.222,0,0,1-1.728,0L2.291,23.37a1.222,1.222,0,0,1,0-1.726l7.842-7.879L2.289,5.886a1.222,1.222,0,0,1,0-1.726L3.445,3.006a1.222,1.222,0,0,1,1.728,0l9.9,9.9A1.222,1.222,0,0,1,15.069,14.629Z"
+                transform="translate(-1.933 -2.648)" fill="#fff" />
+            </g>
+            <g id="Group_207" data-name="Group 207" transform="translate(169.349 683.354)" opacity="0">
+              <path id="Path_214" data-name="Path 214"
+                d="M1600.69,687.065c0,.007,1.007-1.158,1-1.172,3.307,7.025-2.065,3.976-2.863,5.292s-1,1.348-1.056,1.545a3.647,3.647,0,0,0,1.056,2.434c.884.8-7.67,5.923-9.241,5.237s-4.181-7.331-4.236-8.215,5.271-6.867,5.842-6.953S1597.372,680.026,1600.69,687.065Z"
+                transform="translate(-1585.349 -683.354)" fill="#51c47d" />
+            </g>
+            <g id="next_button" transform="translate(159 663)">
+              <circle id="Ellipse_14" class="loginCircle" data-name="Ellipse 14" cx="29" cy="29" r="29"
+                fill="#ffb713" />
+            </g>
+            <g id="Icon_awesome-chevron-right-3" data-name="Icon awesome-chevron-right"
+              transform="translate(182.57 681.235)">
+              <path id="Icon_awesome-chevron-right-4" data-name="Icon awesome-chevron-right"
+                d="M15.069,14.629l-9.9,9.9a1.222,1.222,0,0,1-1.728,0L2.291,23.37a1.222,1.222,0,0,1,0-1.726l7.842-7.879L2.289,5.886a1.222,1.222,0,0,1,0-1.726L3.445,3.006a1.222,1.222,0,0,1,1.728,0l9.9,9.9A1.222,1.222,0,0,1,15.069,14.629Z"
+                transform="translate(-1.933 -2.648)" fill="#fff" />
+            </g>
+          </g>
+        </g>
+      </svg>
+
+    </div>
+  </div>
+
+  <!--[if IE 8]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ie8/0.2.5/ie8.js"></script>
+  <![endif]-->
+
+  <!--[if lte IE 9]>
+  <script src="https://cdn.auth0.com/js/polyfills/1.0/base64.min.js"></script>
+  <script src="https://cdn.auth0.com/js/polyfills/1.0/es5-shim.min.js"></script>
+  <![endif]-->
+
+  <script src="https://cdn.auth0.com/js/auth0/9.11.2/auth0.min.js"></script>
+  <script src="https://cdn.auth0.com/js/polyfills/1.0/object-assign.min.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+
+      document.body.classList.add("fade-from-above");
+    });
+  </script>
+
+</body>
+
+</html>
